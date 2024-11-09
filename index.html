@@ -1,116 +1,195 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>Shakil Ahmad - Full Stack Developer</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-</head>
+    <title>Learnershakil Portfolio</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        /* Page Layout */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.5;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        /* Header Section */
+        header {
+            text-align: center;
+            padding: 2em 0;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #444;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        p {
+            color: #666;
+        }
+
+        /* About Section */
+        .about {
+            display: flex;
+            flex-direction: row;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .about img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-content {
+            flex: 1;
+        }
+
+        .about h2 {
+            font-size: 2rem;
+            color: #333;
+        }
+
+        /* Skills Section */
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            grid-gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .skill-item {
+            padding: 1rem;
+            border-radius: 10px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .skill-item:hover {
+            transform: scale(1.05);
+        }
+
+        /* Project Section */
+        .projects {
+            margin-top: 2rem;
+        }
+
+        .project-item {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background-color: #fff;
+            padding: 1.5rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .project-item:hover {
+            transform: scale(1.02);
+        }
+
+        .project-item h3 {
+            font-size: 1.5rem;
+            color: #444;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Footer Section */
+        footer {
+            text-align: center;
+            padding: 2em 0;
+            margin-top: 2rem;
+            color: #666;
+        }
+
+        /* Button styles */
+        .btn {
+            padding: 0.75rem 1.5rem;
+            border-radius: 5px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #555;
+        }
+
+    </style>
+</head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>Welcome to My Portfolio</h1>
+        <p>Full Stack Developer | MERN Stack | PHP Laravel | IoT Enthusiast</p>
     </header>
 
-    <main>
-        <section id="hero">
-            <div class="hero-content">
-                <div class="hero-image">
-                    <img src="/images/shakil.jpg" alt="Shakil Ahmad">
-                </div>
-                <h1 class="hero-title">Hi, I'm Shakil Ahmad</h1>
-                <p class="hero-subtitle">Full Stack Developer</p>
-                <a href="#contact" class="cta-button">Get in Touch</a>
-            </div>
-        </section>
-
-        <section id="about">
-            <div class="container">
+    <div class="container">
+        <!-- About Section -->
+        <section class="about">
+            <img src="profile.png" alt="My Profile Picture">
+            <div class="about-content">
                 <h2>About Me</h2>
-                <p>I'm a passionate full stack developer with expertise in creating robust and scalable web
-                    applications.</p>
+                <p>Hello! I'm Shakil Ahmad a passionate developer skilled in MERN Stack, Laravel, and various other technologies. I enjoy solving real-world problems through code, and I have a strong interest in IoT and robotics projects.</p>
             </div>
         </section>
 
-        <section id="skills">
-            <div class="container">
-                <h2>Skills</h2>
-                <ul class="skills-list">
-                    <li><i class="fas fa-laptop-code"></i> Front-end Development: HTML5, CSS3, JavaScript</li>
-                    <li><i class="fas fa-server"></i> Back-end Development: Node.js, Express</li>
-                    <li><i class="fas fa-database"></i> Database: MongoDB, MySQL</li>
-                    <li><i class="fas fa-tools"></i> Frameworks: React, Angular, Vue.js</li>
-                </ul>
-            </div>
+        <!-- Skills Section -->
+        <section class="skills">
+            <div class="skill-item">HTML</div>
+            <div class="skill-item">CSS</div>
+            <div class="skill-item">JavaScript</div>
+            <div class="skill-item">React.js</div>
+            <div class="skill-item">Typescript</div>
+            <div class="skill-item">Node.js</div>
+            <div class="skill-item">MongoDB</div>
+            <div class="skill-item">Postgres</div>
+            <div class="skill-item">Express</div>
+            <div class="skill-item">Prisma</div>
+            <div class="skill-item">PHP</div>
+            <div class="skill-item">Laravel</div>
         </section>
 
-        <section id="projects">
-            <div class="container">
-                <h2>Projects</h2>
-                <div class="project-slider">
-                    <div class="project">
-                        <h3>It's a Dare</h3>
-                        <div class="project-image">
-                            <img class="dare" src="images/dare.png" alt="It's a Dare">
-                        </div>
-                        <p>A mobile app that allows users to challenge their friends with exciting dares and track their
-                            progress.</p>
-                        <a href="#" class="project-button">Learn More</a>
-                    </div>
-                    <div class="project">
-                        <h3>Sing Together</h3>
-                        <div class="project-image">
-                            <img class="music" src="images/music.jpg" alt="Sing Together">
-                        </div>
-                        <p>An interactive web application that enables users to sing together in a virtual group,
-                            providing a fun and collaborative singing experience.</p>
-                        <a href="#" class="project-button">Learn More</a>
-                    </div>
-                    <!-- Add more project entries as needed -->
-                </div>
+        <!-- Projects Section -->
+        <section class="projects">
+            <h2>My Projects</h2>
+            <div class="project-item">
+                <h3>Project 1: E-Commerce App</h3>
+                <p>A full-featured e-commerce web app with React.js and Node.js.</p>
+                <a href="#" class="btn">View Project</a>
+            </div>
+            <br>
+            <div class="project-item">
+                <h3>Project 2: Medium Clone</h3>
+                <p>A blog-style web application built with MERN Stack.</p>
+                <a href="#" class="btn">View Project</a>
             </div>
         </section>
+    </div>
 
-
-        <section id="contact">
-            <div class="container">
-                <h2>Contact</h2>
-                <p>You can reach me at <a href="mailto:learnershakil@gmail.com">learnershakil@gmail.com</a> or through the
-                    contact
-                    form below:</p>
-                <br>
-                <form id="contact-form">
-                    <input type="text" id="name" placeholder="Your Name">
-                    <input type="email" id="email" placeholder="Your Email">
-                    <textarea id="message" placeholder="Your Message"></textarea>
-                    <button type="submit" class="submit-button">Send</button>
-                </form>
-            </div>
-        </section>
-
-    </main>
-
+    <!-- Footer -->
     <footer>
-        <div class="container">
-            <p>&copy; 2023 Shakil Ahmad</p>
-            <div class="social-media-icons">
-                <a href="https://www.linkedin.com/in/shakil-ahmad-69a6a326a/"><i class="fab fa-linkedin"></i></a>
-                <a href="https://twitter.com/learnershakil"><i class="fab fa-twitter"></i></a>
-                <a href="https://github.com/learnershakil"><i class="fab fa-github"></i></a>
-            </div>
-        </div>
+        <p>&copy; 2024 Shakil Ahmad | Connect with me on <a href="https://www.linkedin.com/in/learnershakil/">LinkedIn</a></p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
-
 </html>
